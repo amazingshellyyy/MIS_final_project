@@ -1,0 +1,53 @@
+
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+
+<div class="result">搜尋結果: {{ query }} {{ userName }} 共 {{ countQuery }} 筆資料</div>
+<!-- <div class="w3-overlay" onclick="closeNav()" style="cursor:pointer" id="myOverlay"></div> -->
+<div id="main">
+<!-- 進階搜尋 -->
+<div class="col-md-3 col-sm-6">
+  <form class="form-find">
+    <h5>進階搜尋:</h5>
+    <input type="text" name="projectName" placeholder="請輸入專案名稱......"> <br /><br />
+    <input type="text" name="userName" placeholder="請輸入提供者名稱......"> <br /><br />
+    <input type="submit" class="btn btn-default btn-xs" value="搜尋" disabled/>
+  </form>
+</div>
+
+<div class="col-md-9 col-sm-6">
+  <div class="row">
+    <br /><br /><br />
+    {% for index, product in products %}
+    <div class="col-md-10 col-sm-6" id="items">
+      {% include 'products/partials/item.twig' with {product: product} %}
+    </div>
+
+    {% if (index +1) % 1 == 0 %}
+  </div>
+  <div class="row">
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+</div>
+
+
+      <script type="text/javascript">
+      $(document).ready(
+        function(){
+          $('input:submit').attr('disabled',true);
+          $('input:text').change(
+            function(){
+              if ($(this).val()){
+                $('input:submit').removeAttr('disabled');
+              }
+              else {
+                $('input:submit').attr('disabled',true);
+              }
+            });
+        });
+      </script>
+
+  {% endblock %}

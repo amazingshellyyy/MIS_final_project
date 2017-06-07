@@ -1,0 +1,164 @@
+/* Basic*/
+body{
+		font-family:微軟正黑體;
+		background-color: #f3f7f7;
+	}
+ul{
+  margin:0px;
+}
+
+/*Nav*/
+
+	.navbar-brand{
+		font-size: 30px;
+		font-weight: 100;
+
+	}
+
+/*Timeline*/
+
+	.timeline{
+		margin-top: 50px;
+		height: 90vh;
+		width: 1500px;
+
+		overflow: hidden;
+
+
+	}
+
+
+	#line{
+		height:10px;
+		width:2000px;
+
+		position: relative;
+		top:250px;
+
+		border-radius:5px;
+
+		background-color: black;
+
+		display: none;
+	}
+
+	.assign{
+		height: 250px;
+		width: 120px;
+		position: relative;
+		top:52px;
+		margin: 20px;
+		padding: 10px;
+		float: left;
+		display: none;
+    font-size:50px;
+	}
+  #T1{
+    height:600px;
+    width:2000px;
+    padding:50px;
+  }
+	.assign h1{
+		font-weight:300;
+	}
+
+	.assign h5{
+		padding:0 10px;
+	}
+
+
+/*mainbar*/
+.bar{
+  width:300px;height:100%;
+  background-color:#222949;
+  position:fixed;
+  top:0px;
+  right:1px;
+  padding:0px;
+  margin:0px;
+  z-index:3;
+}
+.nav_area{
+      position:fixed;
+      top:150px;
+      right:1px;
+      width:280px;
+      height:100%;
+      box-sizing: border-box;
+      padding:0px;
+      margin:5px;
+}
+.buttom{
+      display:block;
+      padding:1px;
+      /*padding-left:5px;
+      padding-right:5px;
+      padding-top:0.5px;*/
+      /*background-color:#63639c;*/
+      border-left: solid 3px #ffb336;
+      color:#f3f7f7;
+      font-family:微軟正黑體;
+      letter-spacing:1px;
+      font-weight:bold;
+      margin:5px;
+}
+.panel-body{
+  margin:0px;
+  right:1px;
+  width:200px;
+  height:50px;
+}
+
+/*profilephoto*/
+.circle{
+  background-image: url(assets/images/pp-21.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px 100px;
+
+  float:left;
+  border-radius:100%;
+  width:80px;
+  height:80px;
+
+  position:relative;
+  /*margin:15px;*/
+  border:2px solid #ffffff;
+}
+
+.line3{
+  position:fixed;
+  top:102px;
+  width:100%;
+  border-bottom: solid 0.5px #9292b9;
+
+}
+
+/*childbar*/
+.buttom2{
+  display:inline-block;
+  padding-top:13px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:5px;
+  border-bottom: solid 3px #ffb336;
+  color:#f3f7f7;
+  font-family:微軟正黑體;
+  letter-spacing:1px;
+  font-weight:bold;
+}
+a{
+  color:#f3f7f7;
+  font-family:微軟正黑體;
+  letter-spacing:1px;
+  font-weight:bold;
+
+}
+.nav_area2{
+  position:fixed;
+  width:100%;
+  height:50px;
+  background-color:#404E89;
+  margin:0px;
+  right: 1px;
+}

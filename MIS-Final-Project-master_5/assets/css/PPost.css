@@ -1,0 +1,202 @@
+html, body{
+	height: 100% !important;
+}
+
+	body{
+		
+		margin:0px;
+	}
+	.mainpost{
+		position:relative;
+		top:120px;
+		left:80px;
+		width:1000px;	
+
+	}
+		.post{
+		position:relative;
+		/*top:20px;*/
+		border:solid 1px #eee;
+		padding: 10px;
+		
+		width:900px;
+		border-radius:5px;
+		/*border:2px black solid;*/
+	    }
+			.icon{
+				width:25px;
+				height:25px;
+				position:relative;
+				top:-3px;
+			}
+
+			#show1 {
+			    display: none;
+			    height: 200px;
+			    width: 200px;
+			}
+
+			#show2 {
+			    display: none;
+			    height: 200px;
+			    width: 200px;
+			}
+
+			#photo1 {
+			    display: none;
+			}
+
+			#photo2 {
+			    display: none;
+			}
+
+			
+
+			
+			.btn{
+				border:solid 3px white;
+				background-color:#eee;
+				color: black;
+				margin:5px;
+				border-radius: 50px;
+			}
+			.btn2{
+				border:solid 3px white;
+				background-color:transparent;
+				color: black;
+				margin:5px;
+				position:relative;
+				left:70px;
+
+			}
+	.main2{
+		position:relative;
+		display: inline-block;
+		border:solid 1px #eee;
+		width:900px;
+		height:300px;
+		
+		top:140px;
+		left:80px;
+		margin-bottom:10px;
+		border-radius:5px;
+		/*padding:5px;*/
+	}
+
+		.post-left{
+			/*border:solid 3px black;*/
+			width:445px;
+			position:relative;
+			float: left;
+			height:300px;
+			padding:20px;
+
+		}
+			.dropdown{
+				position:relative;
+				display:inline-block;
+			}
+			.postarea{
+
+				height:190px;
+				width:400px;
+				/*border:1px solid black;*/
+				padding:10px;
+				position:relative;
+				top:20px;
+				background-color:#f9f9f9;
+				/*border-radius:5px;*/
+			}
+				.posts{
+					/*border:1px solid black;*/
+					position:relative;
+				}
+			.post-right{
+				/*border:solid 2px black;*/
+				border-left:solid 1px #eee;
+				width:445px;
+				position:relative;
+				float: left;
+				height:300px;
+				padding:5px;
+
+
+			}
+	
+							#time{
+								/*border:solid 3px black;*/
+								padding:5px;
+								margin:5px;
+							}
+							.img-circle{
+								position:relative;
+								display:inline-block;
+								/*border:2px solid black;*/
+								width:45px;
+								height:45px;
+								top:-3px;
+							}
+							.UserName{
+								font-size:18px;
+								/*height:40px;*/
+								position:relative;
+								display:inline-block;
+								/*border:2px solid black;*/
+							}
+	
+	
+	.inputcomment{
+		width:80%;
+		height:30px;
+		border-radius:5px;
+		border:1px solid #eee;
+		padding-left:5px;
+	}
+
+	.commentg{
+		position:relative;
+		padding: 5px;
+		/*border:2px solid black;*/
+		height:50px;
+		/*border-bottom:1px solid #eee;*/
+	}
+
+	
+	.commentpp{
+		position:relative;
+		display:inline-block;
+		/*border:2px solid black;*/
+		color:#595757;
+		
+	}
+	.comments{
+		position:relative;
+		display:inline-block;
+		/*border:2px solid black;*/
+		color:black;
+	}
+
+	.commentarea{
+		/*border:2px solid black;*/
+		position:absolute;
+		top:245px;
+		width:100%;
+		border-top:1px solid #eee;
+		padding:4px;
+
+	}
+	
+	.commentarea form input{
+		position:relative;
+		display: inline-block;
+		/*border:2px solid black;*/
+		width:330px;
+
+	}
+	.commentarea form .btn{
+		/*border:2px solid black;*/
+		position:relative;
+		display: inline-block;
+	}
+	
+

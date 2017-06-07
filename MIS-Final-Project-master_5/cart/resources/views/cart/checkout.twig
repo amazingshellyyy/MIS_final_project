@@ -1,0 +1,31 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+
+<div class="row">
+
+  {% for item in basket.all %}
+  <div class="col-md-2">
+    <div class="thumbnail">
+        <img src="{{ item.image }}" alt="{{ item.title }}"/>
+    </div>
+  </div>
+  <div class="col-md-10">
+    <h3> {{ item.title }} </h3>
+    <h5> {{ item.userName }} </h5>
+  </div>
+
+  {% endfor %}
+
+</div>
+
+
+<div class="col-md-4">
+  <div>
+    <h4>交易成功</h4>
+    {% include 'cart/partials/summary.twig' %}
+  </div>
+
+</div>
+
+{% endblock %}

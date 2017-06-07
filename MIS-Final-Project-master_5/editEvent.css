@@ -1,0 +1,22 @@
+.blank{
+	height:30px;
+	
+	/*border:2px solid black;*/
+}
+
+.title{
+	height:30px;
+	width:100px;
+	/*border:2px solid black;*/
+}
+
+.bl {
+	display:inline-block;
+}
+.bll{
+	display:inline-block;
+}
+
+.colortag{
+	
+}

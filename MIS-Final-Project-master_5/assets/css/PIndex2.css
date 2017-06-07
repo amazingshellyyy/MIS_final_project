@@ -1,0 +1,111 @@
+/* Basic*/
+html,body{
+		font-family:微軟正黑體;
+		z-index:-10;
+
+	}
+ul{
+  margin:0px;
+}
+
+
+#background{
+	top:100px;
+	left:10px;
+	width:1340px;
+	height:500px;
+	z-index:-999;
+	position:fixed;
+}
+
+/*Nav*/
+
+	.navbar-brand{
+		font-size: 30px;
+		font-weight: 100;
+
+	}
+
+/*Timeline*/
+
+	.timeline{
+		top:65px;
+		height:90vh;
+		z-index: 0;
+		overflow-y: hidden;
+		position:relative;
+		width:100%;
+    	background: transparent;
+	}
+
+  .T1{
+    /*border:3px solid green;*/
+
+    left: 0px;
+
+    height:100%;
+
+    padding:5px;
+    background: transparent;
+
+  }
+
+  .city{
+    position: relative;
+    border:5px solid black;
+    width: 100%;
+    height:100%;
+    float:left;
+  }
+
+	#line{
+
+		width:100%;
+		height:10px;
+		position: fixed;
+		top:545px;
+		z-index:-999;
+		border-radius:10px;
+        margin: 0px;
+		background-color: black;
+
+
+	}
+
+  .date{
+
+  	/*border:2px solid orange;*/
+    min-width: 2px;
+    height: 100%;
+    float: left;
+    margin-top:5px;
+    background: transparent;
+  }
+
+	.assign{
+
+		/*height: 250px;*/
+		/*width: 120px;*/
+		position: relative;
+		top:230px;
+		/*margin: 20px;*/
+		padding: 5px;
+		float: left;
+		display: none;
+       font-size:50px;
+       /*border:1px solid black;*/
+	}
+
+	.assign h1{
+		font-weight:300;
+	}
+
+	.assign h5{
+		padding-top:10px;
+		text-align: center;
+	}
+	.assign p{
+	    padding:0 5px;
+	    font-size: 10px;
+	    color: gray;
+	}

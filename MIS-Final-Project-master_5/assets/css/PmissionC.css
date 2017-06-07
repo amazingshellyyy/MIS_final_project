@@ -1,0 +1,210 @@
+/* Basic*/
+	
+	*{		
+		font-family:"Microsoft JhengHei";
+	}
+
+	.Stage{
+		/*border:solid 3px black;*/
+		position: relative;
+		margin-bottom:30px;
+		/*margin:0px 20px;*/
+		min-width:1000px;
+		float: left;
+		top: 130px;
+		left:80px;
+		border-left: solid 10px #41bef4;
+		border-radius:4px;
+		/*border:2px black solid;*/
+	}
+
+	.StageHead{
+		position:relative;
+		display: inline-block;
+		/*border: 2px black solid;*/
+		height:300px;
+		float: left;
+		margin-left: 20px;
+		padding: 20px;
+		padding-top:0px;
+	}
+
+	.StageHead input{
+		/*border-color:transparent;*/
+		border:1px solid black;
+		border-radius:5px;
+		width:150px;
+		height:35px;
+		padding:5px;
+	}
+	.titlepic{
+		width:40px;
+		top:-7px;
+		position:relative;
+		display:inline-block;
+	}
+	.title-1{
+		/*border:1px black solid;*/
+		position:relative;
+		display:inline-block;
+
+	}
+
+	.arrowpng{
+		width:30px;
+		position:relative;
+		display:block;
+		margin: 10px;
+	}
+	.StageTime{
+		position: relative;
+		/*padding: 10px;*/
+		top:50px;
+		width:100px;
+		font-weight: 900;
+		/*border:solid 3px black;*/
+	}
+	.StageTime input{
+		padding: 5px;
+		width:150px;
+		border-color:transparent;
+		border-bottom:1px black solid;
+		border-radius:0px;
+	}
+
+
+	.Assign{
+		display: inline-block;
+		position: relative;
+		float: left;
+		margin-left: 20px;	
+		/*border:2px black solid;*/
+		/*width:850px;	*/
+	}
+
+	.mission{
+		border-top: 5px #A9A9A9 solid;
+		border-bottom: 2px #A9A9A9 dashed;
+		border-left: 0px;
+		border-right: 0px;
+		text-align: center;
+		/*padding:5px;*/
+		padding-bottom: 10px;
+		margin:10px;
+
+	
+	}
+	.PS-1{
+		padding:10px;
+		
+	}
+
+	.PS-1 td{
+		width: 100px;
+		height: 50px;
+		padding:5px;
+		
+	}
+	#input1 {
+		width: 130px;
+		
+		padding:5px;
+	}
+
+	#input2{
+		width: 150px;
+		padding:5px;
+		
+	}
+
+	#input3{
+		width:130px;
+		
+	}
+
+	#PS1-5{
+		width:60px;
+		
+	}
+	
+	#PS1-6{
+		width:100px;
+		
+	}
+	.deletebtn{
+		background-color: transparent;
+		border:transparent;
+		width:40px;
+		height:40px;
+	}
+	.deletepng{
+		width:30px;
+	}
+
+	.plus{
+		margin-bottom: 50px; 
+		border: 2px solid #595757;
+		background-color: transparent;
+		width:800px;
+		height: 40px;
+		line-height: 30px;
+		margin: 15px;
+		font-size: 20px;
+		font-weight: 900;
+		color: #595757;
+		/*float: left;*/
+	
+	}
+	.plus2{
+		margin-bottom: 50px; 
+		border: 2px solid #595757;
+		background-color: transparent;
+		width: 800px;
+		height: 50px;
+		line-height: 40px;
+		margin: 20px;
+		font-size: 20px;
+		font-weight: 900;
+		color: #595757;
+		left:80px;
+		position:relative;
+	}
+
+	
+
+	.stage_plus{
+		border: 2px solid #595757;
+		background-color: transparent;
+		position:relative;
+		top:90px;
+		width: 1050px;
+		height: 40px;
+		left: 80px;
+		font-size: 20px;
+		font-weight: 900;
+		color: #595757;
+		margin: 100px 50px;
+	}
+	.save{
+		border: 2px solid orange;
+		background-color: transparent;
+		width: 100px;
+		height: 40px;
+		line-height: 30px;
+		margin-right:0px;
+		font-size: 24px;
+		font-weight: 900;
+		color: orange;
+		position:relative;
+		display:block;
+		left:1000px;
+	}
+	
+	.line1{
+	  position:relative;
+	  top:102px;
+	  width:1000px;
+	  border-bottom: solid 1px #eee;
+	}
+	
+

@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Project Index</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="hover-min.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="titatoggle-dist.css">
+	<script src="assets/js/jquery-3.1.1.min.js"></script>
+
+	<link rel="stylesheet" href="MFile.css">
+
+<script type="text/javascript">
+	$(function(){
+		// 預設顯示第一個 Tab
+		var _showTab = 0;
+		var $defaultLi = $('ul.tabs li').eq(_showTab).addClass('active');
+		$('.tab_content').eq($defaultLi.index()).siblings().hide();
+		
+		// 當 li 頁籤被點擊時...
+		// 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
+		$('ul.tabs li').mouseover(function() {
+			// 找出 li 中的超連結 href(#id)
+			var $this = $(this),
+				_index = $this.index();
+			// 把目前點擊到的 li 頁籤加上 .active
+			// 並把兄弟元素中有 .active 的都移除 class
+			$this.addClass('active').siblings('.active').removeClass('active');
+			// 淡入相對應的內容並隱藏兄弟元素
+			$('.tab_content').eq(_index).stop(false, true).fadeIn().siblings().hide();
+
+			return false;
+		}).find('a').focus(function(){
+			this.blur();
+		});
+	});
+</script>
+</head>
+
+<body>
+	
+
+	<div class="File">
+		<h2 style="text-align: center;">我的檔案</h2>
+		<div id="FileOwn">
+			<table class="FileOwn">
+				<tbody>	
+					<tr class="FO-1" style="font-weight: 900;font-size: 18px;">
+						<td class="FO1-1">專案名稱</td>
+						<td class="FO1-2">檔案名稱</td>
+						<td class="FO1-3">檔案類型</td>
+						<td class="FO1-4">檔案大小</td>
+						<!-- <td class="FO1-5">市集分類</td> -->
+						<td class="FO1-6">允許上架</td>		
+						<td class="FO1-7">商品狀態</td>
+						<td class="FO1-8">目前收益</td>
+						<td class="FO1-5">商品編輯</td>			
+					</tr>
+					<tr class="FO-1">
+						<td class="FO1-1">專案名稱</td>
+						<td class="FO1-2">檔案名稱</td>
+						<td class="FO1-3">檔案類型</td>
+						<td class="FO1-4">檔案大小</td>
+						<!-- <td class="FO1-5">
+							<form>
+								<select name="Type">
+								<option value="">商管</option>
+								<option value="">文化</option>
+								<option value="">數理</option>
+								<option value="">法律</option>
+								</select>
+							</form></td> -->
+						<td class="FO1-6">
+							<div class="checkbox checkbox-slider--b">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                            </div>
+						</td>	
+						<td class="FO1-7"><div class="wait">審核中</div></td>
+						<td class="FO1-8"><img src="http://findicons.com/files/icons/1681/siena/128/currency_dollar_yellow.png" style="width: 25px;height: 25px;">0</td>
+						<td class="FO1-5"><a href="#">編輯</a></td>			
+					</tr>
+					<tr class="FO-1">
+						<td class="FO1-1">專案名稱</td>
+						<td class="FO1-2">檔案名稱</td>
+						<td class="FO1-3">檔案類型</td>
+						<td class="FO1-4">檔案大小</td>
+						<!-- <td class="FO1-5">
+							<form>
+								<select name="Type">
+								<option value="">商管</option>
+								<option value="">文化</option>
+								<option value="">數理</option>
+								<option value="">法律</option>
+								</select>
+							</form></td> -->
+						<td class="FO1-6">
+							<div class="checkbox checkbox-slider--b">
+                                <label>
+                                    <input type="checkbox"><span></span>
+                                </label>
+                            </div>
+						</td>		
+						<td class="FO1-7"><div class="sale">已上架</div></td>
+						<td class="FO1-8"><img src="http://findicons.com/files/icons/1681/siena/128/currency_dollar_yellow.png" style="width: 25px;height: 25px;">105</td>	
+						<td class="FO1-5"><a href="#">編輯</a></td>		
+					</tr>						
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="File">
+		<h2 style="text-align: center;">我的下載</h2>
+		<div id="FileDown">
+			<table class="FileDown">
+				<tbody>	
+					<tr class="FO-2" style="font-weight: 900;font-size: 18px;">
+						<td class="FO2-1">檔案名稱</td>
+						<td class="FO2-2">檔案類型</td>
+						<td class="FO2-3">檔案大小</td>
+						<td class="FO2-4">提供者</td>
+						<td class="FO2-5">下載</td>				
+					</tr>
+					<tr class="FO-2">
+						<td class="FO2-1">檔案名稱</td>
+						<td class="FO2-2">檔案類型</td>
+						<td class="FO2-3">檔案大小</td>
+						<td class="FO2-4">提供者</td>
+						<td class="FO2-5"><a href="">下載</a></td>				
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+
+<!--隱藏卷軸-->
+<script type="text/javascript">	
+$(".timeline").on("mouseenter mouseleave", function (event) { //挷定滑鼠進入及離開事件
+  if (event.type == "mouseenter") {
+    $(this).css({"overflow-x": "scroll"}); //滑鼠進入
+  } else {
+    $(this).scrollTop(0).css({"overflow-x": "hidden"}); //滑鼠離開
+  }
+});
+</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,118 @@
+/* Basic*/
+html,body{
+		font-family:微軟正黑體;
+		z-index:-10;
+
+	}
+ul{
+  margin:0px;
+}
+
+
+#background{
+	top:100px;
+	left:10px;
+	width:1340px;
+	height:500px;
+	z-index:-999;
+	position:fixed;
+}
+
+/*Nav*/
+
+	.navbar-brand{
+		font-size: 30px;
+		font-weight: 100;
+
+	}
+
+/*Timeline*/
+
+	.timeline{
+		top:65px;
+		height:90vh;
+		z-index: 0;
+		overflow-y: hidden;
+		position:relative;
+		width:100%;
+    	background: transparent;
+	}
+
+  .T1{
+    /*border:3px solid green;*/
+    position:relative;
+    left: 0px;
+
+    height:100%;
+
+    padding:5px;
+    background: transparent;
+
+  }
+
+  .city{
+    position: relative;
+    border:5px solid black;
+    width: 100%;
+    height:100%;
+    float:left;
+  }
+
+	#line{
+
+		width:100%;
+		height:10px;
+		position: fixed;
+		top:545px;
+		z-index:-999;
+		border-radius:10px;
+        margin: 0px;
+		background-color: black;
+
+
+	}
+
+  .date{
+
+  	/*border:2px solid black;*/
+    min-width: 2px;
+    height: 100%;
+    position:relative;
+    display:inline-block;
+    margin-top:5px;
+    background: transparent;
+  }
+
+	.assign{
+
+		/*height: 250px;*/
+		/*width: 120px;*/
+		position: relative;
+		top:230px;
+		/*margin: 20px;*/
+		padding: 5px;
+		float: left;
+		display: none;
+       font-size:50px;
+       display:inline-block;
+       /*border:1px solid black;*/
+	}
+
+	
+
+	.missionName{
+		margin-top:10px;
+		text-align: center;
+		font-size:18px;
+		font-weight:900;
+	}
+	.missionDate{
+		text-align: center;
+		color:#595757;
+	}
+	.missionPeople{
+		font-size:15px;
+		color:#595757;
+	}
+	
+

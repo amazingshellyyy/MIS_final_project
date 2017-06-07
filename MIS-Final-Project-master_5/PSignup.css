@@ -1,0 +1,125 @@
+/* Basic*/
+	
+	*{		
+		font-family:"Microsoft JhengHei";
+	}
+
+
+
+
+/*form*/
+
+  .sign{
+    background: #41b1f4;
+    border-top-left-radius:0.6em;
+    border-top-right-radius:0.6em;
+     z-index: 0;
+  }
+
+  .sign h2{
+    background: #41b1f4;
+    margin:0px;
+    height: 50px;
+    padding: 10px;
+    border-radius:50%;
+  }
+
+
+
+
+
+	#bookdate{
+		text-align: right;
+	}
+
+  #tab0{
+    /*border:solid 3px black;*/
+    position: relative;
+    /*height: 100%;*/
+    width:600px;
+
+    /*margin:20px 20px;*/
+    /*padding: 0px 0px 30px 0px;*/
+
+    float: left;
+    top: 80px;
+    /*border-left: solid 8px #41b1f4;*/
+    border-radius:10px;
+    box-shadow:0px 2px 20px #5b5f66;
+    z-index: 1000;
+  }
+
+  
+	.PS-1 td{
+		width: 300px;
+		height: 50px;
+		padding: 10px;
+	}
+
+	.PS1-1{
+		font-size: 18px;
+		border-bottom: 1px 	#DCDCDC solid;
+
+	}
+
+	.PS1-2{
+		border-bottom: 1px 	#DCDCDC solid;
+	}
+
+	
+	.content{
+		display: block;
+		/*border: 2px black solid;*/
+		width:600px;
+		position: relative;
+		top:100px;
+		left: 80px;
+		/*margin: 60px 30px 20px 30px;*/
+		/*padding: 0px 20px 20px 20px;*/
+
+	}
+
+  #show1 {
+      height:100px;
+      width:100px;
+      border-radius:50%;
+      border-color: #FFFFFF;
+      display: none;
+  }
+
+  
+  #photo1 {
+      display: none;
+  }
+
+  
+  .btn{
+    border:solid 3px white;
+    background-color:#eee;
+    color: black;
+    margin:5px;
+    border-radius: 50px;
+  }
+
+  .plus{
+    margin-bottom: 50px; 
+    border: 2px solid rgb(51,51,51);
+    background-color: transparent;
+    width: 400px;
+    height: 50px;
+    line-height: 40px;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 900;
+    color:rgb(51,51,51);
+    float: left;
+  }
+
+  .plus:hover{
+    border: 2px solid #41b1f4;
+    color:#41b1f4;
+  }
+
+  #PSetting {
+     margin:  0px 20px 20px 20px;
+  }

@@ -1,0 +1,73 @@
+
+  <div class="col-md-2">
+    <div class="thumbnail">
+      <a href="{{ path_for('product.get', {slug: product.slug}) }}"><img src="{{ product.image }}" alt="{{ product.title }} image."></a>
+    </div>
+  </div>
+  <div class="caption">
+    <div class="col-md-4">
+      <h3><a href="{{ path_for('product.get', {slug: product.slug}) }}">{{ product.title }}</a></h3>
+      <p><font size="3">{{ product.userName }}</font></p>
+    </div>
+    <div class="col-md-4" id="item-detail">
+<div class="row">
+      {% if product.getRating() == 0 %}
+      <img src="/assets/images/rating_stars/star0.png" height="30" width="150"/>
+      {% endif %}
+
+      {% if product.getRating() > 0 and product.getRating() < 1 %}
+      <img src="/assets/images/rating_stars/star0-5.png" height="30" width="150" />
+      {% endif %}
+
+      {% if product.getRating() == 1 %}
+      <img src="/assets/images/rating_stars/star1.png" height="30" width="150" />
+      {% endif %}
+
+      {% if product.getRating() > 1 and product.getRating() < 2 %}
+      <img src="/assets/images/rating_stars/star1-5.png" height="30" width="150" />
+      {% endif %}
+
+      {% if product.getRating() == 2 %}
+      <img src="/assets/images/rating_stars/star2.png" height="30" width="150" />
+      {% endif %}
+
+      {% if product.getRating() > 2 and product.getRating() < 3 %}
+      <img src="/assets/images/rating_stars/star2-5.png" height="30" width="150" />
+      {% endif %}
+
+      {% if product.getRating() == 3 %}
+      <img src="/assets/images/rating_stars/star3.png" height="30" width="150" />
+      {% endif %}
+
+      {% if product.getRating() > 3 and product.getRating() < 4 %}
+      <img src="/assets/images/rating_stars/star3-5.png" height="30" width="150" />
+      {% endif %}
+
+      {% if product.getRating() == 4 %}
+      <img src="/assets/images/rating_stars/star4.png" height="30" width="150" />
+      {% endif %}
+
+      {% if product.getRating() > 4 and product.getRating() < 5 %}
+      <img src="/assets/images/rating_stars/star4-5.png" height="30" width="150" />
+      {% endif %}
+
+      {% if product.getRating() == 5 %}
+      <img src="/assets/images/rating_stars/star5.png" height="30" width="150" />
+      {% endif %}
+    </div> <br />
+<div class="row">
+        <h4> 購買次數：{{ product.getID() }} 次 </h4>
+
+      </div>
+
+    </div>
+    <div class="col-md-2">
+      <div class="row">
+          <h2>
+            <img src="/assets/images/pc-coin.png" height="25px" width="25px;"/>
+          {{ product.price }} </h2>
+
+          </div>
+
+    </div>
+  </div>

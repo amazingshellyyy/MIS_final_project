@@ -1,0 +1,258 @@
+/* Basic*/
+
+*{
+	font-family:"Microsoft JhengHei";
+}
+
+.head{
+	position: relative;
+	top:80px;
+	padding: 0px 0px 10px 10px;
+	background-color: #f8f8f8;
+	margin: 0px 30px 0px 30px;
+	-moz-box-shadow:    inset 0 0 5px #aaaaaa;
+	-webkit-box-shadow: inset 0 0 5px #cccccc;
+	box-shadow:         inset 0 0 5px #aaaaaa;
+}
+
+.icon{
+	width:50px;
+	height:50px;
+
+	/*border:2px solid black;*/
+	position:relative;
+	display:inline-block;
+}
+
+tbody{
+		background-color: #f9f9f9;
+}
+
+.title{
+	position: relative;
+	display: inline-block;
+	color:#595757;
+	top:10px;
+}
+
+.top{
+	height: 60px;
+	padding-left: 8px;
+	padding-bottom: 15px;
+	position:relative;
+	background-color: rgba(69, 167, 222, 1);
+}
+
+.top2{
+	height: 60px;
+	padding-left: 8px;
+	padding-top: 20px;
+	position:relative;
+	background-color: rgba(234, 150, 67, 1);
+}
+
+.tablepic{
+	height:60px;
+	/*border:1px solid;*/
+	position: relative;
+	display: inline-block;
+	left:10px;
+	top:-10px;
+	/*border:2px solid black;*/
+}
+
+/*searchbox*/
+
+.srchall{
+	/*border:2px solid black;*/
+	position:relative;
+	display:inline-block;
+	left: 350px;
+	top: -12px;
+}
+
+.srchbox{
+	height:35px;
+	width: 350px;
+	line-height:25px;
+	position:relative;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	padding: 12px 20px 12px 35px;
+	background-image: url(/assets/images/srchicon.png);
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	background-position: 4px 4px;
+}
+
+.goicon{
+	height:35px;
+	width:35px;
+	position:relative;
+	display:inline-block;
+	top:10px;
+}
+
+.title-1{
+	position:relative;
+	display: inline-block;
+	top: -10px;
+}
+
+.file_upload{
+	position:relative;
+	display:inline-block;
+	width:400px;
+	height:60px;
+	left: 400px;
+}
+
+.choosebtn{
+	position:relative;
+	top: 18px;
+	border:1px solid #A9A9A9;
+	border-radius:4px;
+	background-color: white;
+	z-index: 1;
+}
+
+.uploadbtn{
+	position:relative;
+	top: -12px;
+	left: 255px;
+	border: 2px solid #A9A9A9;
+	border-radius:5px;
+	background-color: #e8e8e8;
+	z-index: 0;
+}
+
+
+/*MFile*/
+
+#MyFile{
+	border-top: 2px     #A9A9A9 solid;
+	border-bottom: 2px    #A9A9A9 solid;
+	border-left: 0px;
+	border-right: 0px;
+
+}
+
+.File{
+	display: block;
+	margin: 0px 30px 30px 30px;
+	/*padding: 0px 20px 20px 20px;*/
+	top:100px;
+	/*left:150px;*/
+	position:relative;
+	border: 2px solid #bdbdbd;
+}
+
+
+/*我的檔案*/
+.Myfilebody{
+	border-top: 2px     #A9A9A9 solid;
+	border-bottom: 2px    #A9A9A9 solid;
+	border-left: 0px;
+	border-right: 0px;
+	width: 100%;
+}
+
+td, th {
+	text-align: left;
+	border-bottom: 1px solid #dddddd;
+	padding-left: 8px !important;
+	height: 50px;
+}
+
+tr{
+   -moz-box-shadow:    inset 0 0 5px #cccccc;
+   -webkit-box-shadow: inset 0 0 5px #cccccc;
+   box-shadow:         inset 0 0 5px #cccccc;
+}
+
+tr:hover{background-color:#fcfcfc}
+
+.FO1-1 {
+	max-width: 50px;
+	min-width: 50px;
+}
+
+.FO2-1 {
+	max-width: 20px;
+	min-width: 20px;
+}
+
+/*.FO2-2 {
+	max-width: 40%;
+	min-width: 40%;
+}
+
+.FO2-3 {
+	max-width: 20%;
+	min-width: 20%;
+}
+
+.FO2-4 {
+	max-width: 20%;
+	min-width: 20%;
+}
+
+.FO2-5 {
+	max-width: 10%;
+	min-width: 10%;
+}*/
+
+.wait{
+	color:red;
+}
+
+.sale{
+
+}
+.yesno input[type="radio"] {
+	display: none;
+}
+
+.yesno input[type="radio"] + label {
+	display: inline-block;
+	background-color: transparent;
+	border: 1px solid gray;
+	cursor: pointer;
+	padding: 0px 10px;
+}
+
+.yesno [type="radio"]:checked + label {
+	border: 1px solid #5599FF ;
+	background-color:#5599FF  ;
+	color: #fff;
+}
+
+/*FileDown*/
+
+.FileDown{
+	border-top: 2px     #A9A9A9 solid;
+	border-bottom: 2px    #A9A9A9 solid;
+	border-left: 0px;
+	border-right: 0px;
+	text-align: center;
+
+}
+
+.FileDown a{
+	color: #003C9D;
+}
+
+
+.save{
+	border: 2px dashed orange;
+	background-color: transparent;
+	width: 150px;
+	height: 50px;
+	line-height: 40px;
+	margin: 20px;
+	font-size: 24px;
+	font-weight: 900;
+	color: orange;
+	float: left;
+}

@@ -1,0 +1,139 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+
+<div id="main">
+
+  <div class="col-md-8">
+
+    {% if basket.itemCount %}
+    <div class="buy" id="buy1">
+      <div class="shop" id="buy11">
+        <table class="table">
+          <h3>購物車
+            <a href="#" class="btn btn-default btn-xs">移除</a>
+            <a href="#" class="btn btn-default btn-xs">收藏</a>
+            <!-- <button id="buy12button" type="button">結帳</button> -->
+          </h3>
+
+          <thead>
+            <tr>
+              <th class="t1">
+                <input type="checkbox" name="alla" onclick="checkalla(this,'a')">
+              </th>
+              <th>檔案名稱</th>
+              <th>提供者</th>
+              <th>專案名稱</th>
+              <th>購買點數</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in basket.all %}
+            <tr>
+              <td class="t1">
+                <input type="checkbox" name="a" value="">
+              </td>
+              <td><a href="{{ path_for('product.get', { slug: item.slug }) }}">{{ item.title }}</a></td>
+              <td>{{ item.userName }}</td>
+              <td>{% if item.projectName is empty %} NULL {% else %} {{ item.projectName }} {% endif %}</td>
+              <td>${{ item.price | number_format(2) }}</td>
+
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    {% else %}
+    <!-- <p> You have no items in your cart. <a href="{{ path_for('home') }}">Start shopping</a></p> -->
+    <p> You have no items in your cart. <a href="/cart/search_file.php">Start shopping</a></p>
+    {% endif %}
+
+
+
+    <div id="buy12" class="shop" style="display: none">
+      <h3>結帳</h3>
+      <div class="col-sm-7">
+        <table class="table">
+          <br>
+          <thead>
+            <tr>
+              <th class="t2">專案名稱</th>
+              <th class="t2">提供者</th>
+              <th class="t2">課程名稱</th>
+              <th class="t2">購買點數</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="t2">會計學報告</td>
+              <td class="t2">鄭俊彥</td>
+              <td class="t2">會計學</td>
+              <td class="t2">15點</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <br>
+
+      </div>
+
+
+
+      <div class="col-sm-5">
+
+        <table class="table">
+          <br>
+          <thead>
+            <tr>
+              <th class="t2">項目</th>
+              <th class="t2">點數</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="t2">現有點數</td>
+              <td class="t2">200點</td>
+
+            </tr>
+            <tr>
+              <td class="t2">交易點數</td>
+              <td class="t2">45點</td>
+
+            </tr>
+            <tr>
+              <td class="t2">剩餘點數</td>
+              <td class="t2">155點</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-6">
+        <button id="buy11button" type="button" class="delete">返回</button>
+      </div>
+      <div class="col-sm-6">
+        <button id="buy13button" type="button" class="delete">確認</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cashout" id="buy1">
+    <div class="col-md-4">
+
+      {% if basket.itemCount and basket.subTotal %}
+      <div>
+        <h4>帳單</h4>
+        <hr>
+        {% include 'cart/partials/summary.twig' %}
+        <a href="{{ path_for('cart.checkout') }}" class="btn btn-default">結帳</a>
+        <!-- <button id="buy12button" type="button">結帳</button> -->
+      </div>
+      {% endif %}
+    </div>
+
+  </div>
+
+</div>
+{% endblock %}

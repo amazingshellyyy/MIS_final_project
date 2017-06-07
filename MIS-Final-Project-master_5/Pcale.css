@@ -1,0 +1,117 @@
+
+body{
+	font-family:微軟正黑體;
+}
+
+table{
+	border-color:transparent;
+	border-collapse: collapse;
+
+}
+#calendar{
+	top:100px;
+	position: fixed;
+	border-color:transparent;
+	left:50px;
+
+
+}
+.mission{
+	left:3.5%;
+	position:relative;
+	width:93%;
+	font-size:12px;
+	padding:1px;
+	margin:1px;
+	text-align:center;
+	border-radius:3px;
+	margin:0px;
+}
+
+.valid{
+	vertical-align: top;
+	width:120px;
+	height:70px;
+	border:1px solid #ddd;
+
+}
+
+
+.date{
+
+	height:20;
+	width:120px;
+	/*border-top:1px solid #ddd;*/
+	border-bottom:1px solid #ddd;
+	margin:0px;
+	/*text-align:left;*/
+	/*text-align:top;*/
+}
+
+.week{
+	height:20px;
+	width:120px;
+	text-align: center;
+	border-color: transparent;
+	/*border-top:1px solid rgba(51,51,51,0.6);
+	border-bottom:1px solid rgba(51,51,51,0.6);
+	border-left:1px solid rgba(51,51,51,0.2);
+	border-right:1px solid rgba(51,51,51,0.2);*/
+	/*border:1px solid rgba(51,51,51,0.2);*/
+}
+
+
+
+.selectTable{
+	width:850px;
+	/*border:solid 2px #ddd;*/
+	position: fixed;
+	top:70px;
+	text-align: center;
+	left:50px;
+
+}
+
+
+select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  border: solid 1px #000;
+
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+  padding-left:10px;
+
+  height:25px;
+  width:70px;
+}
+
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+
+.Mbtn{
+
+	appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background-color: transparent;
+    box-sizing: none;
+    padding:0px;
+    border-width:0px;
+    border-style: outset;
+    border-color: transparent;
+    border-image: none;
+}
+
+.right{
+	width:25px;
+}

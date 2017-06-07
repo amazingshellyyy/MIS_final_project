@@ -1,0 +1,237 @@
+/* Basic*/
+	
+	*{		
+		font-family:"Microsoft JhengHei";
+	}
+
+	
+
+
+	
+
+
+
+/*form*/
+
+	#bookdate{
+		text-align: right;
+	}
+
+	#PSetting{
+		border-top: 2px 		#A9A9A9 solid;
+		border-bottom: 2px 		#A9A9A9 solid;
+		border-left: 0px;
+		border-right: 0px;
+
+	}
+
+	.Stage{
+		/*border:solid 3px black;*/
+		position: relative;
+		/*height: 100%;*/
+		width:950px;
+
+		margin:20px 20px;
+		/*padding: 0px 0px 30px 0px;*/
+
+		float: left;
+		top: 80px;
+		border-left: solid 8px #41b1f4;
+		border-radius:10px;
+		box-shadow:0px 2px 20px #5b5f66;
+	}
+
+	.StageName{
+		position:relative;
+		/*border: 2px black solid;*/
+		height: 100%;
+		width: 150px;
+		float: left;
+	}
+
+	.StageName input{
+		width: 38%;
+	}
+
+	.StageName h2{
+		text-align: center;
+	}
+
+	.StageTime{
+		position: relative;
+		padding: 20px;
+		top:20px;
+		font-weight: 900;
+		/*border:solid 3px black;*/
+	}
+
+	.Assign{
+		display: block;
+		float: left;
+		margin-left: 10px;		
+	}
+
+	.PAssign{
+		/*border-top: 2px  rgba(51,51,51,0.1) solid;*/
+		border-bottom: 2px 	rgba(51,51,51,0.1) solid;
+		border-left: 0px;
+		border-right: 0px;
+		text-align: center;
+		
+
+	}
+
+
+	.PS-3 td{
+		width: 100px;
+		height: 50px;
+	}
+
+	
+	#PS3-5 {
+		width: 60px;
+		height: 50px;
+	}
+
+	#PS3-6 {
+		/*width: 100px;*/
+		height: 50px;
+	}
+
+	#PS3-7 {
+		width: 85px;
+		height: 50px;
+	}
+	
+	#input1 {
+		width: 80px;
+
+	}
+
+	#input2{
+		width: 100px;
+	}
+
+	#input3{
+		width: 80px;
+		margin: 5px;
+		text-align:
+	}
+
+	.up{
+		width: 175px;
+		position: relative;
+		float:left;
+		
+	}
+
+	/*.adddoc{
+		position: relative;
+		float:left;		
+		width: 25px;
+	}*/
+
+	.plus{
+		margin-bottom: 50px; 
+		border: 2px solid rgb(51,51,51);
+		background-color: transparent;
+		width: 400px;
+		height: 50px;
+		line-height: 40px;
+		margin: 20px;
+		font-size: 24px;
+		font-weight: 900;
+		color:rgb(51,51,51);
+		float: left;
+	}
+	.plus:hover{
+		border: 2px solid #41b1f4;
+		color:#41b1f4;
+	}
+	/*.plus2{
+		margin-bottom: 50px; 
+		border: 2px solid rgb(51,51,51);
+		background-color: transparent;
+		width: 450px;
+		height: 50px;
+		line-height: 40px;
+		margin: 20px;
+		font-size: 24px;
+		font-weight: 900;
+		color:rgb(51,51,51);
+		float: left;
+	}
+	.plus2:hover{
+		border: 2px solid #41b1f4;
+		color:#41b1f4;
+	}*/
+
+	.save{
+		border: 2px solid rgb(51,51,51);
+		background-color: transparent;
+		width: 100px;
+		height: 50px;
+		line-height: 40px;
+		margin: 20px;
+		font-size: 24px;
+		font-weight: 900;
+		color: rgb(51,51,51);
+		float: left;
+		float: bottom;
+	}
+	.save:hover{
+		border: 2px solid #41b1f4;
+		color:#41b1f4;
+	}
+	.edit{
+		border: 2px solid rgb(51,51,51);
+		background-color: transparent;
+		width: 100px;
+		height: 50px;
+		line-height: 40px;
+		margin: 20px;
+		font-size: 24px;
+		font-weight: 900;
+		color: rgb(51,51,51);
+		float: left;
+		float: bottom;
+	}
+	.edit:hover{
+		border: 2px solid #41b1f4;
+		color:#41b1f4;
+	}
+
+	
+
+	.stage_plus{
+		border: 2px solid rgb(51,51,51);
+		background-color: transparent;
+		position:relative;
+		top:30px;
+		width: 800px;
+		height: 150px;
+		/*line-height: 40px;*/
+		/*margin: 0 20px;*/
+		font-size: 24px;
+		font-weight: 900;
+		color: rgb(51,51,51);
+		margin: 50px 50px;
+	}
+	.stage_plus:hover{
+		border: 2px solid #41b1f4;
+		color:#41b1f4;
+	}
+	
+	.line1{
+	  position:relative;
+	  top:102px;
+	  width:1000px;
+	  border-bottom: solid 1px #eee;
+	}
+	.StageTime input{
+		width:100px;
+	}
+
+
+
+

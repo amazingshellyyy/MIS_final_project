@@ -1,0 +1,15 @@
+<table class="table">
+  <tr>
+    <td>現有點數</td>
+    <td>$500</td>
+  </tr>
+  <tr>
+    <td>交易點數</td>
+    <td>${{ basket.subTotal | number_format(2) }}</td>
+  </tr>
+
+  <tr>
+    <td class="success">Total</td>
+    <td class="success">${{ (500 - basket.subTotal) | number_format(2) }}</td>
+  </tr>
+</table>

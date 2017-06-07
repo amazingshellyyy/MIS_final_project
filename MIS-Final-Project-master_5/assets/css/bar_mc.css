@@ -1,0 +1,344 @@
+/*bar_P*/
+
+html body{
+  top:0px;
+  margin:0px;
+  border:0px;
+
+
+}
+
+.logoimg{
+
+  width:150px;
+  left:10px;
+
+  position:relative;
+  top:8px;
+
+}
+/*mainbar*/
+
+
+.user{
+
+  position:relative;
+}
+
+.circle{
+  background-image: url(assets/images/pp-21.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px 100px;
+
+  float:left;
+  border-radius:100%;
+  width:80px;
+  height:80px;
+
+  position:relative;
+  /*margin:15px;*/
+  border:2px solid #ffffff;
+}
+
+.logout{
+  display:inline-block;
+  max-height:10%;
+  width:20px;
+  left:85%;
+  top:10px;
+  margin:0px;
+  position:relative;
+}
+
+/*.edit{
+display:inline-block;
+height:18px;
+width:18px;
+top:5px;
+position:relative;
+}
+*/
+
+.edit{
+	display:inline-block;
+	height:18px;
+	width:18px;
+	top: 10px;
+	left: 80%;
+	position: absolute;
+}
+
+.userName{
+  display:block;
+  color:#f8f8f8;
+  padding:5px;
+  font-size:20px;
+  position:relative;
+  margin:0px;
+
+
+
+}
+
+.userCoin{
+  text-align:center;
+  height:30px;
+  display:block;
+
+  color:#f8f8f8;
+  font-size:15px;
+  position:relative;
+  margin:0px;
+
+}
+
+.line3{
+  top:10%;
+
+  width:90%;
+  border-bottom: solid 0.5px #f8f8f8;
+  position:relative;
+}
+/*profilephoto*/
+
+
+
+
+
+.nav_area{
+  /*top:250px;*/
+  /*right:1px;*/
+  width:200px;
+  height:100%;
+  box-sizing: border-box;
+  padding:0px;
+  margin:5px;
+  z-index: 1;
+  overflow: auto;
+
+  position:relative;
+  margin-top:20px;
+}
+
+.sideNav{
+  height: 50px;
+  font-size:30px;
+  cursor:pointer;
+  color:white;
+  position:relative;
+  left:20px;
+  top:10px;
+}
+
+
+.button{
+  display:block;
+  height:30px;
+  left:30px;
+  /*border: solid 1px white;*/
+  /*border-bottom: dashed 2px #F49B42;*/
+  border-left:3px solid #41B1F4;
+  font-family:微軟正黑體;
+  letter-spacing:1px;
+  /*font-weight:bold;*/
+  margin:10px;
+  text-align:bottom;
+}
+.button a{
+  position:relative;
+  display: inline-block;
+  /*border:1px solid white;*/
+  top:5px;
+  /*left:-3px;*/
+  font-size:15px;
+  margin-left:8px;
+}
+.icon{
+  width:40px;
+  height:40px;
+  /*border:1px solid white;*/
+  position:relative;
+  display:inline-block;
+
+
+
+
+}
+
+.button a:link {color:#f8f8f8; text-decoration:none;}
+.button a:visited {color:#f8f8f8; text-decoration:none;}
+.button a:hover {font-size:20; color:#41b1f4; text-decoration:none;}
+.button a:active {color:#f8f8f8; text-decoration:none;}
+
+.panel-group{
+  height:100%;
+}
+.panel-body{
+  margin:0px;
+  right:1px;
+  width:200px;
+  height:50px;
+}
+
+.button3{
+  margin:5px;
+  display:block;
+  padding-top:5px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-bottom:5px;
+  left:30px;
+  border-left: solid 3px #41b1f4;
+  font-family:微軟正黑體;
+  letter-spacing:1px;
+  font-weight:bold;
+  margin:10px;
+  font-size:16px;
+}
+
+
+/*childbar*/
+
+.nav_area2{
+  /*border-top:0px;*/
+  z-index: 998;
+  position:fixed;
+  width:100%;
+  height:60px;
+  background-color:#f8f8f8;
+  /*background-color:black;*/
+  margin-top:0px;
+  border-top:0px;
+}
+
+
+#mwt_mwt_slider_scroll
+{
+  z-index:999;
+  height:100%;
+  width:20%;
+  position:fixed;
+  right:0px;
+  top:0px;
+  margin:0px;
+}
+
+#mwt_slider_content{
+  /*background-color:rgba(243,247,247,0.8);*/
+  /*background-color:#41b1f4;*/
+  background-color:rgb(51,51,51);
+  /*text-align:center;*/
+  /*padding-top:20px;*/
+  height:200%;
+
+}
+
+
+
+
+
+/*barbtn*/
+.c-hamburger--htra {
+  z-index: 998;
+  background-color: transparent;
+
+  position:fixed;
+  top:8px;
+  left: 95%;
+}
+.c-hamburger {
+  display: block;
+
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  /*border-radius: 5px;*/
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 21px;
+  left: 10px;
+  right: 18px;
+  height: 4px;
+  background: #5B5B5B;
+  width:25px;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #5B5B5B;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -10px;
+}
+
+.c-hamburger span::after {
+  bottom: -10px;
+}
+
+
+
+
+.c-hamburger--htra span {
+  transition: transform 0.3s;
+}
+
+.c-hamburger--htra span::before {
+  transform-origin: top left;
+  transition: transform 0.3s, width 0.3s, top 0.3s;
+}
+
+.c-hamburger--htra span::after {
+  transform-origin: bottom left;
+  transition: transform 0.3s, width 0.3s, bottom 0.3s;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htra.is-active {
+  background-color: transparent;
+  left:75%;
+  z-index:999;
+}
+
+.c-hamburger--htra.is-active span {
+  transform: rotate(180deg);
+}
+
+.c-hamburger--htra.is-active span::before,
+.c-hamburger--htra.is-active span::after {
+  width: 60%;
+}
+
+.c-hamburger--htra.is-active span::before {
+  top: 0;
+  transform: translateX(-2px) translateY(2px) rotate(-45deg);
+}
+
+.c-hamburger--htra.is-active span::after {
+  bottom: 0;
+  transform: translateX(-2px) translateY(-2px) rotate(45deg);
+}

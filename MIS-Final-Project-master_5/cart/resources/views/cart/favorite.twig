@@ -1,0 +1,65 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+<script type="text/javascript" src="/assets/js/SBuy.js"></script>
+<link rel="stylesheet" href="/assets/css/SBuy.css">
+
+  <div class="col-md-8">
+    <div id="buy2" class="buy">
+      <div class="shop">
+        <br>
+        <table class="table">
+          <h3>個人收藏</h3>
+          <br>
+          <thead>
+            <tr>
+              <th class="t1">
+                <input type="checkbox" name="allb" onclick="checkallb(this,'b')" />
+              </th>
+              <th class="t2">檔案名稱</th>
+              <th class="t2">提供者</th>
+              <th class="t2">專案名稱</th>
+              <th class="t2">購買點數</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="t1">
+                <input type="checkbox" name="b" value="" />
+              </td>
+              <td class="t2">會計學報告</td>
+              <td class="t2">鄭俊彥</td>
+              <td class="t2">會計學</td>
+              <td class="t2">15點</td>
+            </tr>
+            <tr>
+              <td class="t1">
+                <input type="checkbox" name="b" value="" />
+              </td>
+              <td class="t2">經濟學報告</td>
+              <td class="t2">筆記人</td>
+              <td class="t2">經濟學</td>
+              <td class="t2">15點</td>
+            </tr>
+            <tr>
+              <td class="t1">
+                <input type="checkbox" name="b" value="" />
+              </td>
+              <td class="t2">微積分報告</td>
+              <td class="t2">呵呵</td>
+              <td class="t2">微積分</td>
+              <td class="t2">15點</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr>
+        <div class="col-sm-12">
+          <button id="productbutton" type="button" class="delete">刪除</button>
+          <button id="productbutton" type="button" class="add">加入購物車</button>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

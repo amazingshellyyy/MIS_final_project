@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <title>jQuery UI Dialog - Default functionality</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link href="titatoggle-dist.css" rel="stylesheet">
+    <script type="text/javascript" src="SystemSetup.js"></script>
+    <link rel="stylesheet" href="SystemSetup.css">
+</head>
+
+<body>
+    <!-- 主導覽列 -->
+    <div class="bar">
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+        <div class="circle circle1"></div>
+        <div class="nav_area">
+            <div class=class="panel-group" id="accordion">
+                <div class="buttom">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        我的專案</a>
+      </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                <li>進行中</li>
+                                <li>已完成</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttom">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        行事曆</a>
+      </h4>
+                    </div>
+                </div>
+                <div class="buttom">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+        個人設定</a>
+      </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="line3"></hr>
+    </div>
+    <!-- 副導覽 -->
+    <div class="nav_area2">
+        <a class="brand" href="#">Logo</a>
+        <h3>系統設定</h3>
+        <form class="navbar-form form">
+            <div class="form-group">
+                <input type="text" class="form-control" size="25" placeholder="輸入專案名稱或任務名稱......">
+            </div>
+            <button type="submit" class="btn btn-default">搜尋</button>
+        </form>
+    </div>
+    <!-- 小分頁 -->
+    <div class="list">
+        <li class="buttom2"><a href="javascript:ShowContent(1, 3, 'setup')">會員資料</a></li>
+        <li class="buttom2"><a href="javascript:ShowContent(2, 3, 'setup')">安全性</a></li>
+        <li class="buttom2"><a href="javascript:ShowContent(3, 3, 'setup')">偏好設定</a></li>
+        <li class="buttom2"><a href="#set04">隱私權相關</a></li>
+        <li class="buttom2"><a href="#set05">說明</a></li>
+        <li class="buttom2"><a href="#set05">意見回饋</a></li>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- 專案設定 -->
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-10">
+                <div class="mainpage">
+                    <div class="mainpart" id="setup1">
+                        <br>
+                        <div class="container-fluid">
+                            <h4>會員資料</h4>
+                            <button id="memberbutton1" type="button" class="btn btn-default btn-xs">修改</button>
+                            <br>
+                            <br>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>姓名</td>
+                                        <td>
+                                            <h5 id="name1">鄭俊彥</h5>
+                                            <form id="name2" style="display:none" class="form-find">
+                                                <input type="text" class="form-findtext" placeholder="鄭俊彥">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>密碼</td>
+                                        <td>
+                                            <h5 id="password1">********</h5>
+                                            <form id="password2" style="display:none" class="form-find">
+                                                <h5>密碼:</h5>
+                                                <input type="password" class="form-findtext" placeholder="********">
+
+
+                                                <h5>新的密碼:</h5>
+                                                <input type="password" class="form-findtext" placeholder="請輸入新的密碼......">
+                                                <h5>確認密碼:</h5>
+                                                <input type="password" class="form-findtext" placeholder="請輸入新的密碼......">
+                                                <hr>
+                                            </form>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>電子信箱</td>
+                                        <td>
+                                            <h5 id="mail1">1033060??@nccu.edu.tw</h5>
+                                            <form id="mail2" style="display:none" class="form-find">
+                                                <h5>修改電子信箱:</h5>
+                                                <input type="text" class="form-findtext" placeholder="1033060??@nccu.edu.tw">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>聯絡手機</td>
+                                        <td>
+                                            <h5 id="phone1">0912345678</h5>
+                                            <form id="phone2" class="form-find" style="display: none">
+                                                <h5>修改手機號碼:</h5>
+                                                <input type="text" class="form-findtext" placeholder="0912345678">
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button id="memberbutton2" style="display:none" type="button" class="btn btn-danger btn-xs">取消</button>
+                            <button id="memberbutton3" style="display:none" type="button" class="btn btn-primary btn-xs">確認</button>
+                        </div>
+                    </div>
+                    <div class="mainpart" id="setup2" style="display: none">
+                        <br>
+                        <div class="container-fluid">
+                            <h4>安全性設定</h4>
+                            <button id="safebutton1" type="button" class="btn btn-default btn-xs">修改</button>
+                            <br>
+                            <br>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>登入警告</td>
+                                        <td>
+                                            <h5 id="alert1">警告郵件:啟用 警告簡訊:啟用</h5>
+                                            <form id="alert2" class="form-find" style="display: none">
+                                                <div class="checkbox checkbox-slider--b">
+                                                    <label>
+                                                        <input type="checkbox"><span>從陌生裝置或瀏覽器登入時收到警告郵件</span>
+                                                    </label>
+                                                </div>
+                                                <br>
+                                                <div class="checkbox checkbox-slider--b">
+                                                    <label>
+                                                        <input type="checkbox"><span>從陌生裝置或瀏覽器登入時收到警告簡訊</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>登入驗證</td>
+                                        <td>
+                                            <h5 id="verify1">簡訊驗證:啟用 代碼產生器:啟用</h5>
+                                            <form id="verify2" class="form-find" style="display: none">
+                                                <div class="checkbox checkbox-slider--b">
+                                                    <label>
+                                                        <input type="checkbox"><span>簡訊驗證:</span>
+                                                    </label>
+                                                </div>
+                                                <br>
+                                                <div class="checkbox checkbox-slider--b">
+                                                    <label>
+                                                        <input type="checkbox"><span>代碼產生器</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>登入位置</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>帳號救援</td>
+                                        <td>
+                                            <h5 id="forget1">寄郵件到電子信箱:啟用 寄簡訊到手機:啟用</h5>
+                                            <form id="forget2" class="form-find" style="display: none">
+                                                <div class="checkbox checkbox-slider--b">
+                                                    <label>
+                                                        <input type="checkbox"><span>忘記密碼時寄郵件至預設信箱</span>
+                                                    </label>
+                                                </div>
+                                                <hr>
+                                                <div class="checkbox checkbox-slider--b">
+                                                    <label>
+                                                        <input type="checkbox"><span>忘記密碼時寄簡訊至預設手機</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button id="safebutton2" style="display:none" type="button" class="btn btn-danger btn-xs">取消</button>
+                            <button id="safebutton3" style="display:none" type="button" class="btn btn-primary btn-xs">確認</button>
+                        </div>
+                    </div>
+                    <div class="mainpart" id="setup3" style="display: none">
+                        <br>
+                        <div class="container-fluid">
+                            <h4>帳戶偏好設定</h4>
+                            <button id="preferbutton1" type="button" class="btn btn-default btn-xs">修改</button>
+                            <br>
+                            <br>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>語言</td>
+                                        <td>
+                                            <h5 id="language1">繁體中文</h5>
+                                            <form id="language2" class="form-find" style="display: none">
+                                                <h5>選擇語言:</h5>
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option>繁體中文</option>
+                                                        <option>英文</option>
+                                                        <option>簡體中文</option>
+                                                    </select>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>音效</td>
+                                        <td>
+                                            <h5 id="sound1">通知音效:啟用 提醒音效:啟用</h5>
+                                            <form id="sound2" class="form-find" style="display: none">
+                                                <div class="checkbox checkbox-slider--b">
+                                                    <label>
+                                                        <input type="checkbox"><span>收到新通知時撥放音效</span>
+                                                    </label>
+                                                </div>
+                                                <br>
+                                                <div class="checkbox checkbox-slider--b">
+                                                    <label>
+                                                        <input type="checkbox"><span>收到提醒時撥放音效</span>
+                                                    </label>
+                                                </div>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>通知</td>
+                                        <td>
+                                            <h5 id="notice1">郵件發送:啟用 簡訊發送:啟用</h5>
+                                            <form id="notice2" class="form-find" style="display: none">
+                                                <form>
+                                                    <div class="checkbox checkbox-slider--b">
+                                                        <label>
+                                                            <input type="checkbox"><span>重要通知發送郵件到電子信箱</span>
+                                                        </label>
+                                                    </div>
+                                                    <br>
+                                                    <div class="checkbox checkbox-slider--b">
+                                                        <label>
+                                                            <input type="checkbox"><span>重要通知發送簡訊到手機</span>
+                                                        </label>
+                                                    </div>
+                                                    <hr>
+                                                    <h5>那些屬於重要通知:</h5>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">專案邀請</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">專案成員變更</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">代辦事項提醒</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">任務變更</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">大區段變更</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">檔案上傳</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">新的貼文</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input type="checkbox" value="">貼文回應</label>
+                                                    </div>
+                                                </form>
+                                                <hr>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>貼文</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button id="preferbutton2" style="display:none" type="button" class="btn btn-danger btn-xs">取消</button>
+                            <button id="preferbutton3" style="display:none" type="button" class="btn btn-primary btn-xs">確認</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-sm-2 text-center">
+                    <div class="well">
+                        <br>
+                        <img src="https://unwire.hk/wp-content/uploads/2014/10/facebook-user.jpg" class="img-circle" height="60" width="80" alt="Avatar">
+                        <h5>許斾旟</h5>
+                        <hr>
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#section01">代辦清單</a></li>
+                            <li><a data-toggle="collapse" href="#club">我的專案</a></li>
+                            <div id="club" class="panel-collapse collapse">
+                                <ul class="list-group">
+                                    <li class="list-group-item">會計學報告</li>
+                                    <li class="list-group-item">經濟學報告</li>
+                                    <li class="list-group-item">微積分報告</li>
+                            </div>
+                            <li><a href="#section02">行事曆</a></li>
+                            <li><a href="#section03">系統設定</a></li>
+                            </ul>
+                            <br>
+                    </div>
+                </div> -->
+        </div>
+    </div>
+</body>
+
+</html>

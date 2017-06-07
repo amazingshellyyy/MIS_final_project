@@ -1,0 +1,128 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+<script type="text/javascript" src="/SProduct/SProduct/SProduct.js"></script>
+<link rel="stylesheet" href="/SProduct/SProduct/SProduct.css">
+
+<div id="buy1">
+<div id="main" class="concentrate">
+  <div class="col-md-4">
+    <img id="productpicture0" src="{{ product.image }}" alt="{{ product.title }} image" class="thumbnail img-responsive" height="266px" width="266px">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <!-- <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol> -->
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <a href="/assets/images/documents/page1.png"><img class="productpicture1" src="/assets/images/documents/page1.png"></a>
+          <a href="/assets/images/documents/page2.png"><img class="productpicture1" src="/assets/images/documents/page2.png"></a>
+          <a href="/assets/images/documents/page3.png"><img class="productpicture1" src="/assets/images/documents/page3.png"></a>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a> -->
+      <!-- <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a> -->
+    </div>
+  </div>
+
+
+  <div class="col-md-6">
+    <h2 style="float: left; width: 50%;">{{ product.title }} &nbsp;</h2>
+    <h3 style="float: right; width: 50%; color:orange;"><img src="/assets/images/pc-coin.png" class="EZPcoin"> {{ product.price }}</h3>
+    {% if product.getRating() == 0 %}
+    <img src="/assets/images/rating_stars/star0.png" height="30" width="150"/>
+    {% endif %}
+
+    {% if product.getRating() > 0 and product.getRating() < 1 %}
+    <img src="/assets/images/rating_stars/star0-5.png" height="30" width="150" />
+    {% endif %}
+
+    {% if product.getRating() == 1 %}
+    <img src="/assets/images/rating_stars/star1.png" height="30" width="150" />
+    {% endif %}
+
+    {% if product.getRating() > 1 and product.getRating() < 2 %}
+    <img src="/assets/images/rating_stars/star1-5.png" height="30" width="150" />
+    {% endif %}
+
+    {% if product.getRating() == 2 %}
+    <img src="/assets/images/rating_stars/star2.png" height="30" width="150" />
+    {% endif %}
+
+    {% if product.getRating() > 2 and product.getRating() < 3 %}
+    <img src="/assets/images/rating_stars/star2-5.png" height="30" width="150" />
+    {% endif %}
+
+    {% if product.getRating() == 3 %}
+    <img src="/assets/images/rating_stars/star3.png" height="30" width="150" />
+    {% endif %}
+
+    {% if product.getRating() > 3 and product.getRating() < 4 %}
+    <img src="/assets/images/rating_stars/star0.png3-5" height="30" width="150" />
+    {% endif %}
+
+    {% if product.getRating() == 4 %}
+    <img src="/assets/images/rating_stars/star4.png" height="30" width="150" />
+    {% endif %}
+
+    {% if product.getRating() > 4 and product.getRating() < 5 %}
+    <img src="/assets/images/rating_stars/star4-5.png" height="30" width="150" />
+    {% endif %}
+
+    {% if product.getRating() == 5 %}
+    <img src="/assets/images/rating_stars/star5.png" height="30" width="150" />
+    {% endif %}
+    <br /><br />
+    <h5 style="font-style:italic;">{{ product.description }}</h5><br />
+
+    <p>
+      {% if product.tag1 is not empty %}
+      <a href="/cart/public/index.php?query={{ product.tag1 }}" class="btn tags">{{ product.tag1 }}</a>
+      {% endif %}
+      {% if product.tag2 is not empty %}
+      <a href="/cart/public/index.php?query={{ product.tag2 }}" class="btn tags">{{ product.tag2 }}</a>
+      {% endif %}
+      {% if product.tag3 is not empty %}
+      <a href="/cart/public/index.php?query={{ product.tag3 }}" class="btn tags">{{ product.tag3 }}</a>
+      {% endif %}
+      {% if product.tag4 is not empty %}
+      <a href="/cart/public/index.php?query={{ product.tag4 }}" class="btn tags">{{ product.tag4 }}</a>
+      {% endif %}
+      {% if product.tag5 is not empty %}
+      <a href="/cart/public/index.php?query={{ product.tag5 }}" class="btn tags">{{ product.tag5 }}</a>
+      {% endif %}
+    </p>
+
+    <hr />
+    <table>
+      <tr>
+        <td>提供者：</td> <td>{{ product.userName }}</td>
+      </tr>
+      <tr>
+        <td>上傳時間：</td> <td>{{ product.created_at|date('m/d/Y') }}</td>
+      </tr>
+      <tr>
+        <td>屬於專案：</td> <td>{% if product.projectName is empty %} NULL {% else %} {{ product.projectName }} {% endif %}  </td>
+      </tr>
+      <tr>
+        <td> 購買次數：</td> <td>{{ product.getID() }} 次 </td>
+      </tr>
+    </table><br />
+
+    <a href="{{ path_for('cart.add', { slug: product.slug, quantity: 1 }) }}" class="btn btn-default btn-sm">Add to cart</a>
+  </div>
+</div>
+</div>
+</div>
+{% endblock %}

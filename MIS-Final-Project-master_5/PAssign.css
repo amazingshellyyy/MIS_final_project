@@ -1,0 +1,262 @@
+/* Basic*/
+
+	*{
+		font-family:"Microsoft JhengHei";
+	}
+
+
+
+
+/*form*/
+
+	#bookdate{
+		text-align: right;
+	}
+
+	#PSetting{
+		border-top: 2px 		#A9A9A9 solid;
+		border-bottom: 2px 		#A9A9A9 solid;
+		border-left: 0px;
+		border-right: 0px;
+
+	}
+
+	.Stage{
+		/*border:solid 3px black;*/
+		position: relative;
+		/*height: 100%;*/
+		width:900px;
+		margin:0px 20px;
+		padding: 20px 0px 30px 0px;
+		float: left;
+		top: 100px;
+		border-left: solid 8px #ffb336;
+		border-radius:4px;
+	}
+
+	.StageName{
+		position:relative;
+		/*border: 2px black solid;*/
+		height: 100%;
+		width: 150px;
+		float: left;
+	}
+
+	.StageName input{
+		width: 38%;
+	}
+
+	.StageName h2{
+		text-align: center;
+	}
+
+	.StageTime{
+		position: relative;
+		padding: 20px;
+		top:20px;
+		font-weight: 900;
+		/*border:solid 3px black;*/
+	}
+
+	.Assign{
+		display: block;
+		float: left;
+		margin-left: 30px;
+	}
+
+	.PAssign{
+		border-top: 2px 		#A9A9A9 solid;
+		border-bottom: 2px 		#A9A9A9 solid;
+		border-left: 0px;
+		border-right: 0px;
+		text-align: center;
+
+
+	}
+
+	.PS-3 td{
+		width: 140px;
+		height: 50px;
+
+
+	}
+	.PS-4 td{
+		width: 140px;
+
+
+	}
+
+	#input1 {
+		width: 120px;
+
+	}
+
+	#input2{
+		width: 120px;
+	}
+
+	.plus{
+		margin-bottom: 50px;
+		border: 2px dashed #4E7D91;
+		background-color: transparent;
+		width: 450px;
+		height: 50px;
+		line-height: 40px;
+		margin: 20px;
+		font-size: 24px;
+		font-weight: 900;
+		color: #4E7D91;
+		float: left;
+
+	}
+	.plus2{
+		margin-bottom: 50px;
+		border: 2px dashed #4E7D91;
+		background-color: transparent;
+		width: 450px;
+		height: 50px;
+		line-height: 40px;
+		margin: 20px;
+		font-size: 24px;
+		font-weight: 900;
+		color: #4E7D91;
+		float: left;
+	}
+
+	.save{
+		border: 2px dashed orange;
+		background-color: transparent;
+		width: 150px;
+		height: 50px;
+		line-height: 40px;
+		margin: 20px;
+		font-size: 24px;
+		font-weight: 900;
+		color: orange;
+		float: left;
+		float: bottom;
+	}
+
+	.stage_plus{
+		border: 2px dashed #4E7D91;
+		background-color: transparent;
+		position:relative;
+		top:90px;
+		width: 900px;
+		height: 150px;
+		/*line-height: 40px;*/
+		/*margin: 0 20px;*/
+		font-size: 24px;
+		font-weight: 900;
+		color: #4E7D91;
+		margin: 100px 50px;
+	}
+
+	.line1{
+	  position:relative;
+	  top:102px;
+	  width:1000px;
+	  border-bottom: solid 1px #eee;
+	}
+	.StageTime input{
+		width:100px;
+	}
+
+
+
+/*mainbar*/
+	.bar{
+	  width:300px;height:100%;
+	  background-color:#222949;
+	  position:fixed;
+	  top:0px;
+	  right:1px;
+	  padding:0px;
+	  margin:0px;
+	  z-index:3;
+	}
+	.nav_area{
+	      position:fixed;
+	      top:150px;
+	      right:1px;
+	      width:280px;
+	      height:100%;
+	      box-sizing: border-box;
+	      padding:0px;
+	      margin:5px;
+	}
+	.buttom{
+	      display:block;
+	      padding:1px;
+	      /*padding-left:5px;
+	      padding-right:5px;
+	      padding-top:0.5px;*/
+	      /*background-color:#63639c;*/
+	      border-left: solid 3px #ffb336;
+	      color:#f3f7f7;
+	      font-family:微軟正黑體;
+	      letter-spacing:1px;
+	      font-weight:bold;
+	      margin:5px;
+	}
+	.panel-body{
+	  margin:0px;
+	  right:1px;
+	  width:200px;
+	  height:50px;
+	}
+
+	/*profilephoto*/
+	.circle{
+	  background-image: url(assets/images/pp-21.png);
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  background-size: 100px 100px;
+
+	  float:left;
+	  border-radius:100%;
+	  width:80px;
+	  height:80px;
+
+	  position:relative;
+	  /*margin:15px;*/
+	  border:2px solid #ffffff;
+	}
+
+	.line3{
+	  position:fixed;
+	  top:102px;
+	  width:100%;
+	  border-bottom: solid 0.5px #9292b9;
+
+	}
+
+/*childbar*/
+	.buttom2{
+	  display:inline-block;
+	  padding-top:13px;
+	  padding-left:10px;
+	  padding-right:10px;
+	  padding-bottom:5px;
+	  border-bottom: solid 3px #ffb336;
+	  color:#f3f7f7;
+	  font-family:微軟正黑體;
+	  letter-spacing:1px;
+	  font-weight:bold;
+	}
+	a{
+	  color:#f3f7f7;
+	  font-family:微軟正黑體;
+	  letter-spacing:1px;
+	  font-weight:bold;
+
+	}
+	.nav_area2{
+		z-index: 2;
+	  position:fixed;
+	  width:100%;
+	  height:50px;
+	  background-color:#404E89;
+	  margin:0px;
+	  right: 1px;
+	}

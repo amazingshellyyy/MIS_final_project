@@ -1,0 +1,42 @@
+{% extends 'templates/app.twig' %}
+
+{% block content %}
+<script type="text/javascript" src="/assets/js/SBuy.js"></script>
+<link rel="stylesheet" href="/assets/css/SBuy.css">
+
+<div class="col-md-8">
+  <div class="col-md-8">
+    <div id="buy3" class="buy">
+      <div class="shop">
+        <br>
+        <h3>交易紀錄</h3>
+        <div>
+          <table class="table">
+            <br>
+            <thead>
+              <tr>
+                <th class="t4">交易類型</th>
+                <th class="t5">專案名稱</th>
+                <th class="t5">交易對象</th>
+                <th class="t6">交易時間</th>
+                <th class="t5">交易點數</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="t4">買</td>
+                <td class="t5">資訊管理期末報告</td>
+                <td class="t5">Tina</td>
+                <th class="t6">2017/6/5</th>
+                <td class="t5">120點</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
